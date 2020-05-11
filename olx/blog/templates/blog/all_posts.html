@@ -1,0 +1,6 @@
+<h1>All Posts Page</h1>
+
+
+{% for post in posts %}
+  <h3><a href="{% url 'blog:post_detail' post.id %}">{{ post }}</a></h3>
+{% endfor %}
